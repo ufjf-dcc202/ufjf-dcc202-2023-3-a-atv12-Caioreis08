@@ -20,3 +20,11 @@ function leFormulario(event){
     transacaoNoEstoque(origem, destino, fruta, quantidade)
     atualizaTela()
 }
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    document.getElementById('botaoLimparLista').addEventListener('click', () => {
+        limpaEstoque()
+        atualizaTela()
+    })
+})
+
